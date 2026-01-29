@@ -10,6 +10,7 @@ Custom hardware definition files and pre-built binaries for industrial flight co
 - **Mission-Critical Stability**: OSD disabled for maximum CPU/Memory reliability.
 - **Enhanced Logging**: DataFlash logging enabled for tactical flight analysis.
 - **Advanced Build**: Fully validated on H7 (2048KB Flash) and F7 platforms.
+- 
 
 ## Contact
 Custom flight controller design and ArduPilot integration:
