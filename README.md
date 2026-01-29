@@ -17,5 +17,15 @@ syhc5weav@gmail.com
 
 **[FUKUSHIMA-UAV Project Inquiry Form](https://forms.gle/Fcoec4LH6zp5pdDA9)**
 
+##  Hardware Overview
+
+### FUKUSHIMA_H7 (STM32H743)
+High-performance flight controller with 6-layer PCB design.
+![FUKUSHIMA_H743 Board](スクリーンショット%202026-01-26%20211740.png)
+
+### FUKUSHIMA_F7 (STM32F722)
+Optimized for industrial and agricultural UAV applications.
+![FUKUSHIMA_F722 Board](スクリーンショット%202026-01-26%20182146.png)
+
 ---
 Developed by **FUKUSHIMA-UAV** | Custom UAV Solutions
