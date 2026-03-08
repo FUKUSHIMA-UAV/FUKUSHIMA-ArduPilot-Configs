@@ -8,7 +8,7 @@ Professional flight controller configurations for ArduPilot, designed for reliab
 
 ## 📖 Publications
 
-### 🇯🇵 日本語版
+
 **耐電子戦フライトコントローラー設計の全記録**
 IMU三重冗長化・FHSS・適応型スペクトラム制御・LoRaフォールバックを全て解説。
 
