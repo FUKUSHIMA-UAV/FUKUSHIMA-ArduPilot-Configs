@@ -111,3 +111,27 @@ All code is open source. See `libraries/AP_SX1280_AJ/` for the full driver imple
 
 - Website: https://fukushima-uav.super.site/
 - GitHub: https://github.com/FUKUSHIMA-UAV
+
+## Tracking Pipeline
+
+YOLOv11 + Kalman Filter + D* Lite integrated with MAVLink.
+
+### Files
+- `tracking/track.py` — YOLOv11 + Kalman Filter tracking
+- `tracking/yolo_mavlink.py` — MAVLink integration
+- `tracking/dstar_tracking.py` — D* Lite path planning
+
+### Requirements
+```
+pip install ultralytics filterpy pymavlink opencv-python
+```
+
+### Usage
+```
+python3 tracking/dstar_tracking.py
+```
+
+### Environment
+- Tested on WSL2 (Ubuntu 22.04)
+- ArduPilot SITL
+- Python 3.12.3
