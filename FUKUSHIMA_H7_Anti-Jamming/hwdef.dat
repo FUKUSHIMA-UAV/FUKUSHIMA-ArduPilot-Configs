@@ -204,3 +204,9 @@ define AP_BOOTLOADER_FLASHING_ENABLED 0
 
 # ===== Bootloader Configuration =====
 env BOOTLOADER_DEV_LIST 0
+
+# ===== Additional PWM Outputs (Fixed-wing / Quadplane 8ch support) =====
+PB10 TIM2_CH3 TIM2 PWM(5) GPIO(54)
+PB11 TIM2_CH4 TIM2 PWM(6) GPIO(55)
+PD12 TIM4_CH1 TIM4 PWM(7) GPIO(56)
+PD13 TIM4_CH2 TIM4 PWM(8) GPIO(57)

@@ -187,3 +187,4 @@ define HAL_LED_ON 0
 # DMA configuration for tight channel allocation
 DMA_PRIORITY USART6* ADC* UART* USART* SPI* TIM*
 DMA_NOSHARE SPI1* SPI2* SPI3* SPI4* SPI5*
+
