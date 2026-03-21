@@ -29,7 +29,7 @@ Triple IMU redundancy, SHA-256 encrypted FHSS, adaptive spectrum control, and Lo
 | FUKUSHIMA_F7 | STM32F7 | Cost-effective | $170 |
 | FUKUSHIMA_F7-Agri | STM32F7 | Agricultural optimized | $330 |
 | FUKUSHIMA_H7 | STM32H743 @ 480MHz | Dual IMU, High performance | $500 |
-| FUKUSHIMA_H7_Anti-Jamming | STM32H743 + SX1280 | Anti-jamming, Frequency hopping | $850 |
+| FUKUSHIMA_H7_Anti-Jamming | STM32H743 + SX1280 | Anti-jamming, Frequency hopping | $1500 |
 
 ---
 
@@ -45,7 +45,7 @@ Triple IMU redundancy, SHA-256 encrypted FHSS, adaptive spectrum control, and Lo
 
 ## Features by Model
 
-### FUKUSHIMA_H7_Anti-Jamming (Premium) — $850
+### FUKUSHIMA_H7_Anti-Jamming (Premium) — $1500
 
 - STM32H743 @ 480MHz, ARM Cortex-M7
 - **Triple IMU redundancy** — ICM-42688-P + IIM-42652 + BMI270
