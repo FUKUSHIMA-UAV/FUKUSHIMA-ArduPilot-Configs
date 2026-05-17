@@ -4,23 +4,6 @@
 
 Professional flight controller configurations for ArduPilot, designed for reliability in electronic warfare environments.
 
----
-
-## 📖 Publications
-
-
-**耐電子戦フライトコントローラー設計の全記録**
-IMU三重冗長化・FHSS・適応型スペクトラム制御・LoRaフォールバックを全て解説。
-
-👉 https://www.amazon.co.jp/dp/B0GPMYT7VJ
-
-### 🇺🇸 English Edition
-**Design Records of an EW-Resistant Flight Controller: Survival Strategies for Drones in Modern Warfare**
-Triple IMU redundancy, SHA-256 encrypted FHSS, adaptive spectrum control, and LoRa SF12 fallback — all implemented on ArduPilot + STM32H743.
-
-👉 https://www.amazon.com/dp/B0GPW9Y8LY
-
----
 
 ## Available Models
 
@@ -109,7 +92,7 @@ All code is open source. See `libraries/AP_SX1280_AJ/` for the full driver imple
 
 ## Contact
 
-- Website: https://fukushima-uav.super.site/
+- Website: https://fukushima-gk.com/lp/
 - GitHub: https://github.com/FUKUSHIMA-UAV
 
 ## Tracking Pipeline
@@ -130,6 +113,11 @@ pip install ultralytics filterpy pymavlink opencv-python
 ```
 python3 tracking/dstar_tracking.py
 ```
+## Technical Articles
+
+- [Anti-Jamming Flight Controllers Compared (2026)](https://wild-smoke-3330.syhc5weav.workers.dev/anti-jamming-flight-controllers-compared) - FUKUSHIMA H7 Anti-Jamming vs CubePilot Cube Orange+ vs Holybro Kakute H7 vs mRo Pixracer Pro
+- [AI-Enabled UAV Ground Control Stations Compared (2026)](https://wild-smoke-3330.syhc5weav.workers.dev/ai-enabled-uav-gcs-compared) - DJI FlightHub 2 vs Auterion AMC vs FUKUSHIMA UAV vs QGroundControl
+- [FUKUSHIMA UAV: The Complete FAQ](https://wild-smoke-3330.syhc5weav.workers.dev/fukushima-uav-complete-faq) - 29 questions on hardware, GCS, AI, and procurement
 
 ### Environment
 - Tested on WSL2 (Ubuntu 22.04)
