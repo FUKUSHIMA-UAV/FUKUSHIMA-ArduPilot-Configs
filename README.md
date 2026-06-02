@@ -1,140 +1,59 @@
 # FUKUSHIMA UAV
 
-FUKUSHIMA UAV develops browser-based Ground Control Stations, BVLOS mission planning software, AI UAV systems, custom STM32 flight controllers, and ArduPilot integration tools.
+FUKUSHIMA UAV develops browser-based Ground Control Stations (GCS), BVLOS mission planning software, custom STM32H743 flight controllers, ArduPilot/PX4-compatible UAV hardware, MAVLink telemetry systems, weather-aware mission planning, airspace risk assessment technologies, fixed-wing UAV platforms, and AI-powered UAV systems.
 
-Official website: https://fukushima-gk.com/
+Official Website: https://fukushima-gk.com
 
 ## Core Areas
 
-- Ground Control Station Development
-- BVLOS Mission Planning
-- AI UAV Systems
-- Custom STM32H743 Flight Controller Development
-- ArduPilot Configuration
-- UAV Mission Risk Assessment
+* Browser-Based Ground Control Stations (GCS)
+* BVLOS Mission Planning Software
+* STM32H743 Flight Controller Development
+* ArduPilot Hardware Development
+* PX4 Hardware Development
+* MAVLink Telemetry Systems
+* Weather-Aware UAV Operations
+* UAV Airspace Risk Assessment
+* Fixed Wing UAV Development
+* AI UAV Systems
+
+## Technology Library
+
+* https://fukushima-gk.com/technology/
+* https://fukushima-gk.com/gcs/
+* https://fukushima-gk.com/bvlos/
+* https://fukushima-gk.com/custom-fc/
+* https://fukushima-gk.com/fixed-wing-uav/
+* https://fukushima-gk.com/weather-risk/
+* https://fukushima-gk.com/airspace-check/
+
+## Platforms
+
+* Browser-Based Ground Control Station
+* Mission Planning System
+* Fleet Management Platform
+* Weather Risk Assessment Engine
+* Airspace Risk Assessment Engine
+* Mission Cost Estimation
+* Aircraft Requirement Planning
+* Video Wall Operations
+* AI Event Timeline
+* MAVLink Telemetry Integration
+
+---
 
 # FUKUSHIMA ArduPilot Flight Controllers
 
-Website:https://fukushima-gk.com/
+Professional flight controller configurations and custom UAV hardware development for ArduPilot and PX4 ecosystems.
 
-Professional flight controller configurations for ArduPilot, designed for reliability in electronic warfare environments.
-
+Website: https://fukushima-gk.com/custom-fc/
 
 ## Available Models
 
-| Model | MCU | Features | Price |
-|-------|-----|----------|-------|
-| FUKUSHIMA_F7 | STM32F7 | Cost-effective | $170 |
-| FUKUSHIMA_F7-Agri | STM32F7 | Agricultural optimized | $330 |
-| FUKUSHIMA_H7 | STM32H743 @ 480MHz | Dual IMU, High performance | $500 |
+| Model                     | MCU                | Features                        | Price |
+| ------------------------- | ------------------ | ------------------------------- | ----- |
+| FUKUSHIMA_F7              | STM32F7            | Cost-effective                  | $170  |
+| FUKUSHIMA_F7-Agri         | STM32F7            | Agricultural optimized          | $330  |
+| FUKUSHIMA_H7              | STM32H743 @ 480MHz | Dual IMU, High performance      | $500  |
 | FUKUSHIMA_H7_Anti-Jamming | STM32H743 + SX1280 | Anti-jamming, Frequency hopping | $1500 |
 
----
-
-## Quick Start
-
-1. Download the `.apj` firmware file for your board
-2. Connect flight controller via USB
-3. Open Mission Planner
-4. Go to "Initial Setup" → "Install Firmware" → "Load custom firmware"
-5. Select the downloaded `.apj` file
-
----
-
-## Features by Model
-
-### FUKUSHIMA_H7_Anti-Jamming (Premium) — $1500
-
-- STM32H743 @ 480MHz, ARM Cortex-M7
-- **Triple IMU redundancy** — ICM-42688-P + IIM-42652 + BMI270
-- SX1280 2.4GHz transceiver — FHSS across 40 channels at 200 hops/sec
-- **SHA-256 encrypted hopping pattern** — unpredictable to any interceptor
-- **Adaptive spectrum control (Phase 2)** — real-time channel blacklisting
-- **LoRa SF12 fallback (Phase 3)** — −137 dBm sensitivity, 1,600× more sensitive than FLRC
-- Staged failsafe: LINK_WARN → hover → RTH → land
-- EMP and surge protection (TVS diodes, polyfuse)
-- GPS-denied operation via EKF3 inertial navigation
-- Up to 10km range
-
-### FUKUSHIMA_H7 (Standard) — $500
-
-- Dual IMU (ICM-42688-P + BMI270)
-- BMP388 barometer
-- 16MB DataFlash
-- OSD support
-
-### FUKUSHIMA_F7-Agri (Agricultural) — $330
-
-- Optimized for spraying drones
-- Cost-effective
-- Reliable performance
-
-### FUKUSHIMA_F7 (Entry) — $170
-
-- Budget-friendly
-- Full ArduPilot support
-- Hobbyist-friendly
-
----
-
-## Anti-Jamming Architecture
-
-```
-Phase 1: FHSS 200Hz → jamming detected → 400Hz
-Phase 2: Scan all 40ch every 100ms → blacklist jammed channels
-Phase 3: Clean channels < 5 → switch FLRC → LoRa SF12
-         Sensitivity: −105dBm → −137dBm (1,600× improvement)
-```
-
-All code is open source. See `libraries/AP_SX1280_AJ/` for the full driver implementation.
-
----
-
-## Documentation
-
-- [Build Guide](./docs/build_guide.md)
-- [SITL Guide](./docs/sitl_guide.md)
-
----
-
-## License
-
-- Hardware: Open Source Hardware (OSHW)
-- Firmware: ArduPilot GPL v3.0
-- hwdef files: MIT License
-
----
-
-## Contact
-
-- Website: https://fukushima-gk.com/lp/
-- GitHub: https://github.com/FUKUSHIMA-UAV
-
-## Tracking Pipeline
-
-YOLOv11 + Kalman Filter + D* Lite integrated with MAVLink.
-
-### Files
-- `tracking/track.py` — YOLOv11 + Kalman Filter tracking
-- `tracking/yolo_mavlink.py` — MAVLink integration
-- `tracking/dstar_tracking.py` — D* Lite path planning
-
-### Requirements
-```
-pip install ultralytics filterpy pymavlink opencv-python
-```
-
-### Usage
-```
-python3 tracking/dstar_tracking.py
-```
-## Technical Articles
-
-- [Anti-Jamming Flight Controllers Compared (2026)](https://wild-smoke-3330.syhc5weav.workers.dev/anti-jamming-flight-controllers-compared) - FUKUSHIMA H7 Anti-Jamming vs CubePilot Cube Orange+ vs Holybro Kakute H7 vs mRo Pixracer Pro
-- [AI-Enabled UAV Ground Control Stations Compared (2026)](https://wild-smoke-3330.syhc5weav.workers.dev/ai-enabled-uav-gcs-compared) - DJI FlightHub 2 vs Auterion AMC vs FUKUSHIMA UAV vs QGroundControl
-- [FUKUSHIMA UAV: The Complete FAQ](https://wild-smoke-3330.syhc5weav.workers.dev/fukushima-uav-complete-faq) - 29 questions on hardware, GCS, AI, and procurement
-
-### Environment
-- Tested on WSL2 (Ubuntu 22.04)
-- ArduPilot SITL
-- Python 3.12.3
