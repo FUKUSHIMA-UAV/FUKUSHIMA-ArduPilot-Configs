@@ -1,6 +1,21 @@
+# FUKUSHIMA UAV
+
+FUKUSHIMA UAV develops browser-based Ground Control Stations, BVLOS mission planning software, AI UAV systems, custom STM32 flight controllers, and ArduPilot integration tools.
+
+Official website: https://fukushima-gk.com/
+
+## Core Areas
+
+- Ground Control Station Development
+- BVLOS Mission Planning
+- AI UAV Systems
+- Custom STM32H743 Flight Controller Development
+- ArduPilot Configuration
+- UAV Mission Risk Assessment
+
 # FUKUSHIMA ArduPilot Flight Controllers
 
-**Website:**https://fukushima-gk.com/lp/
+Website:https://fukushima-gk.com/
 
 Professional flight controller configurations for ArduPilot, designed for reliability in electronic warfare environments.
 
